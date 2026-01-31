@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #eaedef;
+  color: #222;
+  text-align: center;
+}
+
+.evil_Larry {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width:768px) {
+  .evil_Larry {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+.larry {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+}
+
+.larry img{
+  width: 300px;
+  object-fit: cover;
+}
+
+.larry h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
