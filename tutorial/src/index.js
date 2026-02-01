@@ -8,10 +8,10 @@ import Book from './book.js'
 function BookList () {
   return (
   <React.Fragment>
-    <h1>Principais livros de Cícero</h1>
+    <h1>Lista de livros</h1>
     <section className='evil_Larry'>
-      {books.map((book) => {
-        return <Book {...book} key={book.id}/>;
+      {books.map((book, index) => {
+        return <Book {...book} key={book.id} number={index}/>;
       })}
     </section>
   </React.Fragment>
